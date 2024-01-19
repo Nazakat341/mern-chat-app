@@ -1,6 +1,21 @@
 const asyncHandler = require("express-async-handler");
 const Chat = require("../models/chatModel");
 const User = require("../models/userModel");
+// const chats = require('../data/data');
+
+// console.log('data',chats);
+
+// const chatData = chats.map((chat) => ({
+//   ...chat,
+//   users: chat.users.map((user) => user._id),
+// }))
+
+// Chat.insertMany(chatData, (err, docs) => {
+//   if (err) {
+//     console.error(err);
+//   } else {
+//     console.log('Data inserted successfully:', docs);
+//   }})
 
 //@description     Create or fetch One to One Chat
 //@route           POST /api/chat/

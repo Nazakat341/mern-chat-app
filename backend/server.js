@@ -69,6 +69,7 @@ io.on("connection", (socket) => {
   socket.on("stop typing", (room) => socket.in(room).emit("stop typing"));
 
   socket.on("new message", (newMessageRecieved) => {
+    console.log('=====newMessageRecieved',newMessageRecieved);
     var chat = newMessageRecieved.chat;
 
     if (!chat.users) return console.log("chat.users not defined");
@@ -87,3 +88,5 @@ io.on("connection", (socket) => {
 });
 //this comment is adding for the testing of pull request
 //this comment is adding for merging
+//bR3hQQD51jviGt99MsH4AoaGlbYp4lBOumK39EgJiko=
+//b86f7a1d-0eaa-4c5c-aed0-1c0691539bca
